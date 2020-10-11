@@ -1,0 +1,23 @@
+.nav-main {
+	display: flex;
+	justify-content: space-between;
+  background-color: wheat;
+  height: 8vh;
+	padding: 19px;
+  width: 100%;
+}
+
+.nav-main--left {
+	
+}
+
+.nav-main--right ul {
+	display: flex; 
+	list-style: none;
+}
+
+.nav-main--right ul li {
+	margin: 0px 8px;
+	padding: 4px;
+	text-transform: capitalize;
+}
