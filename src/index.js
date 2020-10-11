@@ -19,8 +19,9 @@ const Index = () => {
         <Navbar />
         <Router>
           <div>
+            {/* test */}
             <Route exact path='/' component={Home} />
-            <Route exact path='/tournament' component={Tournament} /> 
+            <Route exact path='/tournament' component={Tournament} />
           </div>
         </Router>
         <Footer />
