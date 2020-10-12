@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import useGlobalState from './Store/useGlobalState'
 import Context from './Store/context'
 import Home from './pages/Home.js';
-import Tournament from './pages/Tournament';
+import TournamentLobbyPage from './pages/TournamentLobbyPage';
 
 import Navbar from './components/main/Navbar'
 import Footer from './components/main/Footer'
@@ -22,7 +22,7 @@ const Index = () => {
           <Switch>
             {/* test */}
             <Route exact path='/' component={Home} />
-            <Route exact path='/tournament/:name' component={Tournament} />
+            <Route exact path='/tournament' component={TournamentLobbyPage} />
             <Route component={NotFound} />
           </Switch>
         </Router>

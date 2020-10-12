@@ -7,22 +7,22 @@ export default function SectionWelcome() {
 		{
 			name: 'Tournament',
 			description: 'Tu sie walczy',
-			link: "/tournament/gra1"
+			link: "/tournament"
 		},
 		{
 			name: 'Druga giera',
 			description: '2',
-			link: "/tournament/gra2"
+			link: "/gra2"
 		},
 		{
 			name: 'Trzecia giera',
 			description: '3',
-			link: "/tournament/gra3"
+			link: "/gra3"
 		},
 		{
 			name: 'Czwarta giera',
 			description: 'Tu sie gra',
-			link: "/tournament/gra4"
+			link: "/gra4"
 		},
 	]
 	return (
