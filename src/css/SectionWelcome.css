@@ -11,7 +11,7 @@
   width: 80vw;
   height: 80vh;
   background-color: rgb(228, 228, 228);
-  display: flex;
+	display: flex;
   justify-content: space-around;
 	flex-wrap: nowrap;
 	flex-direction: row;

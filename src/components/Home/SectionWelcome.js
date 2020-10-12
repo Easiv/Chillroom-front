@@ -7,31 +7,31 @@ export default function SectionWelcome() {
 		{
 			name: 'Tournament',
 			description: 'Tu sie walczy',
-			link: "/tournament"
+			link: "/tournament/gra1"
 		},
 		{
 			name: 'Druga giera',
 			description: '2',
-			link: "/tournament"
+			link: "/tournament/gra2"
 		},
 		{
 			name: 'Trzecia giera',
 			description: '3',
-			link: "/tournament"
+			link: "/tournament/gra3"
 		},
 		{
 			name: 'Czwarta giera',
 			description: 'Tu sie gra',
-			link: "/tournament"
+			link: "/tournament/gra4"
 		},
 	]
 	return (
 		<div className="section-welcome">
-      <div className="games-main">
-				{_fromServer.map(x=>(
+			<div className="games-main">
+				{_fromServer.map(x => (
 					<SingleGame name={x.name} description={x.description} key={x.name} link={x.link} />
 				))}
-      </div>
+			</div>
 		</div>
 	)
 }

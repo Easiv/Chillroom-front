@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import useGlobalState from './Store/useGlobalState'
 import Context from './Store/context'
@@ -10,6 +10,7 @@ import Tournament from './pages/Tournament';
 
 import Navbar from './components/main/Navbar'
 import Footer from './components/main/Footer'
+import NotFound from './pages/NotFound';
 
 const Index = () => {
   const store = useGlobalState();
@@ -18,11 +19,12 @@ const Index = () => {
       <Context.Provider value={store}>
         <Navbar />
         <Router>
-          <div>
+          <Switch>
             {/* test */}
             <Route exact path='/' component={Home} />
-            <Route exact path='/tournament' component={Tournament} />
-          </div>
+            <Route exact path='/tournament/:name' component={Tournament} />
+            <Route component={NotFound} />
+          </Switch>
         </Router>
         <Footer />
       </Context.Provider>
