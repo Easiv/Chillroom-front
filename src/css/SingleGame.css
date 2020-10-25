@@ -1,10 +1,49 @@
 .singleGame {
-  width: 12vw;
-  height: 20vh;
-  background-color: turquoise;
-  color:white;
+  width: 240px;
+  height: 220px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: black;
   margin: 10px;
   text-decoration: none;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  box-shadow: 3px 3px 1px rgba(128, 128, 128, 0.25);
+  transition: 0.2s box-shadow, 0.2s transform;
+}
+
+.singleGame:hover {
+  box-shadow: 5px 5px 1px rgba(26, 26, 26, 0.25);
+}
+
+.singleGame:nth-child(odd):hover{
+  transform: translate(-3px, -3px);
+}
+
+.singleGame:nth-child(even):hover{
+  transform: translate(3px, -3px);
+}
+
+
+.singleGame * {
+  text-shadow: 0px 0px 4px wheat;
+}
+
+.gameName {
+  font-weight: 600;
+  font-size: 25px;
+  width: 100%;
+}
+
+.gameDescription {
+  font-weight: 100;
+  font-size: 15px;
+  font-style: italic;
+  width: 100%;
 }
 
 a, link {
