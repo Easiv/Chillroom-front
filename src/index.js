@@ -7,6 +7,7 @@ import useGlobalState from './Store/useGlobalState'
 import Context from './Store/context'
 import Home from './pages/Home.js';
 import TournamentLobbyPage from './pages/TournamentLobbyPage';
+import RoomPage from './pages/RoomPage';
 
 import Navbar from './components/main/Navbar'
 import Footer from './components/main/Footer'
@@ -23,6 +24,7 @@ const Index = () => {
             {/* test */}
             <Route exact path='/' component={Home} />
             <Route exact path='/tournament' component={TournamentLobbyPage} />
+            <Route exact path='/tournament/room' component={RoomPage} />
             <Route component={NotFound} />
           </Switch>
         </Router>

@@ -1,20 +1,22 @@
-import React from 'react'
-import '../../../css/Tournament/Lobby.css'
+import React from 'react';
+import PlayerList from './Room/PlayerList';
+import '../../../css/Tournament/Lobby.css';
 
 export default function Room() {
 	let data = {
 		room: {
       id: '1234',
-			name: '',
+      code: 'XD3217',
+			name: 'Pokój świrków',
 			host: 'idName',
       playerList: [
 				{
 					id: 1,
-					name: 'Twoja stara'
+					name: 'Szczepan'
 				},
 				{
 					id: 2,
-					name: 'Twój stary'
+					name: 'Seba'
 				},
 				{
 					id: 3,
@@ -45,11 +47,7 @@ export default function Room() {
       </div>
       
       <div className="player-list">
-        <ul>
-					{data.room.playerList.map(e => (
-						<li key={e.id}>{e.name}</li>
-					))}
-				</ul>
+        <PlayerList players={data.room.playerList}/>
 			</div>
       
 		</div>
